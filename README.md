@@ -1,18 +1,18 @@
 # Terraform Provider Neon
 
------
+---
 
 <div align="center">
     ⭐ The project needs your support! Please leave a star and become a GitHub sponsor! ⭐
 </div>
 
------
+---
 
 <div align="center">
     💖 Thank you <a href="https://github.com/neondatabase">@neondatabase</a> for sponsoring the project! 💖
 </div>
 
------
+---
 
 Terraform provider to manage the [Neon](https://neon.tech/) Postgres projects.
 
@@ -22,7 +22,7 @@ Terraform provider to manage the [Neon](https://neon.tech/) Postgres projects.
 terraform {
     required_providers {
         neon = {
-            source = "kislerdm/neon"
+            source = "joehoel/neon"
         }
     }
 }
@@ -43,6 +43,7 @@ provider "neon" {
 ```
 
 2. Environment variables:
+
 - Api key specified as `NEON_API_KEY`
 
 ## Requirements
@@ -53,11 +54,14 @@ provider "neon" {
 
 1. Clone the repository
 2. Enter the repository directory
-3. Build the provider using the Go `install` command: 
+3. Build the provider using the Go `install` command:
+
 ```sh
 make build
 ```
+
 4. Run to install the provider to be used locally:
+
 ```sh
 make install
 ```
@@ -93,5 +97,4 @@ In order to run the full suite of Unit tests, run `make test`.
 
 In order to run the full suite of Acceptance tests, run `make testacc`.
 
-*Note:* Acceptance tests create real resources, and often cost money to run.
-
+_Note:_ Acceptance tests create real resources, and often cost money to run.
